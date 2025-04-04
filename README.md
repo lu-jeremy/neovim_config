@@ -9,19 +9,19 @@ My custom Neovim config, along with general instructions for porting it to remot
 - Custom remaps for netrw and harpoon
 
 ## Steps to configure:
-1) Clone this repository to dir A.
-2) Add the following script to dir B:
+1) Clone this repository to dirA.
+2) Add the following script to neovim_config/nvim (the script will be able to find `init.lua`, and source all of the plugin files as a result):
 
 ```bash
 #!/bin/bash
 
 # change SCRIPT_DIR to dir A
-SCRIPT_DIR="$HOME/../../media/corallab-s1/2tbhdd/Jeremy/neovim_config/\[nvim_script.sh\]"
+SCRIPT_DIR="dirA/neovim_config/nvim/[nvim_script.sh]"
 export XDG_CONFIG_HOME=$SCRIPT_DIR
 nvim "$@"
 ```
 
-3) Run `echo ``alias [nvim_command_name]="dir/[nvim_script.sh]"`` >> ~/.bashrc`, or just simply add the alias to the file.
+3) Run `echo ``alias [nvim_command_name]="dirA/neovim_config/nvim/[nvim_script.sh]"`` >> ~/.bashrc`, or just simply add the alias to the file.
 4) Add the following function to packer.lua:
 ```lua
 local ensure_packer = function()
