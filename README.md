@@ -26,7 +26,7 @@ nvim "$@"
 echo `alias [nvim_command_name]="dirA/neovim_config/nvim/[nvim_script.sh]"` >> ~/.bashrc
 ```
 
-5) Add the following function to packer.lua [https://stackoverflow.com/questions/76645160/nvim-not-sourcing-packer](https://stackoverflow.com/questions/76645160/nvim-not-sourcing-packer):
+5) Add the following function to packer.lua ([https://stackoverflow.com/questions/76645160/nvim-not-sourcing-packer](https://stackoverflow.com/questions/76645160/nvim-not-sourcing-packer)):
 ```lua
 local ensure_packer = function()
     local fn = vim.fn
