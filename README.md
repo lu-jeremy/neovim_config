@@ -10,7 +10,7 @@ My custom Neovim config, along with general instructions for porting it to remot
 
 ## Steps to configure:
 1) Clone this repository to dirA.
-2) Add the following script to neovim_config/nvim (the script will be able to find `init.lua`, and source all of the plugin files as a result):
+2) Add the following script to `neovim_config/nvim` (the script will be able to find `init.lua`, and source all of the plugin files as a result):
 
 ```bash
 #!/bin/bash
