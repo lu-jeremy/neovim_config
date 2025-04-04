@@ -38,5 +38,5 @@ end
 local packer_bootstrap = ensure_packer()
 ```
 
-5) Run `:so` in packer, restart nvim, and make sure `:PackerSync` works.
-6) Make sure that custom remaps work. 
+5) Run `:so` in packer, restart nvim, and check that `:PackerSync` runs.
+6) Check that custom remaps, tree-sitter, harpoon, and packer are indeed integrated.
