@@ -21,7 +21,7 @@ export XDG_CONFIG_HOME=$SCRIPT_DIR
 nvim "$@"
 ```
 
-3) Run `echo ``alias [nvim_command_name]="dirA/neovim_config/nvim/[nvim_script.sh]"`` >> ~/.bashrc`, or just simply add the alias to the file.
+3) Run `echo `alias [nvim_command_name]="dirA/neovim_config/nvim/[nvim_script.sh]"` >> ~/.bashrc`, or just simply add the alias to the file.
 4) Add the following function to packer.lua:
 ```lua
 local ensure_packer = function()
