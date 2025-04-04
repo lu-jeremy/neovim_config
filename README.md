@@ -1,6 +1,6 @@
 # Neovim Config
 
-Meant for porting to remote SSH servers.
+My custom Neovim config, along with general instructions for porting it to remote SSH servers.
 
 ## Functionalities:
 - LSP support
@@ -21,7 +21,7 @@ export XDG_CONFIG_HOME=$SCRIPT_DIR
 nvim "$@"
 ```
 
-3) Run `echo ``alias \[nvim_command_name\]=\\"dir/\[nvim_script.sh\]\\"`` >> ~/.bashrc`, or just simply add the alias to the file.
+3) Run `echo ``alias [nvim_command_name]="dir/[nvim_script.sh]"`` >> ~/.bashrc`, or just simply add the alias to the file.
 4) Add the following function to packer.lua:
 ```lua
 local ensure_packer = function()
