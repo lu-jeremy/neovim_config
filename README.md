@@ -15,8 +15,8 @@ My custom Neovim config, along with general instructions for porting it to remot
 ```bash
 #!/bin/bash
 
-# change SCRIPT_DIR to dir A
-SCRIPT_DIR="dirA/neovim_config/nvim/[nvim_script.sh]"
+# change SCRIPT_DIR to where this script is located
+SCRIPT_DIR="dirA/neovim_config/nvim/"
 export XDG_CONFIG_HOME=$SCRIPT_DIR
 nvim "$@"
 ```
